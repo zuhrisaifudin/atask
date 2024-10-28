@@ -1,0 +1,25 @@
+id:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: "Email sudah digunakan"
+            password:
+              blank: "Password tidak boleh kosong"
+        transaction: 
+          attributes:
+            amount:
+              greater_than: "Jumlah harus lebih besar dari 0"
+              blank: "Jumlah tidak boleh kosong"
+              not_a_number: "Jumlah harus berupa angka"  
+            source_wallet:
+              blank: "Dompet sumber tidak boleh kosong"
+            target_wallet:
+              blank: "Dompet tujuan tidak boleh kosong"
+  errors:
+    messages:
+      blank: "tidak boleh kosong"
+      greater_than: "harus lebih besar dari %{count}"
+      not_a_number: "harus berupa angka" 
